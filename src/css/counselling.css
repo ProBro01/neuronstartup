@@ -94,7 +94,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  width: 300px;
+  width: 400px;
 }
 .counselling__doctor-description .counselling__doctor-desc-data:hover {
   color: #AE633F;

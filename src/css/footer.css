@@ -1,0 +1,55 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: rgb(27, 27, 27);
+}
+
+.footer__subscription_form {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+.footer__subscription_form div {
+  width: 40%;
+  display: flex;
+  border: 2px solid #AE633F;
+  justify-content: center;
+  padding: 3rem 2rem;
+  position: relative;
+}
+.footer__subscription_form div p {
+  color: rgba(86, 88, 114, 0.8196078431);
+  font-size: 6rem;
+  position: absolute;
+  bottom: -30%;
+  right: -10%;
+  z-index: -1;
+}
+.footer__subscription_form input {
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  width: 70%;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  z-index: 0;
+}
+.footer__subscription_form button {
+  z-index: 0;
+  background-color: #AE633F;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+  margin-left: 3rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.footer__map {
+  width: 100%;
+  margin: 2rem 0;
+  height: 50vh;
+}/*# sourceMappingURL=footer.css.map */

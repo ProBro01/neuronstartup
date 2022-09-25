@@ -17,8 +17,8 @@ export const Counsellingoption = (props) => {
         <div className="counselling__doctor-description">
           <div className="counselling__doctor-data-cont">
             <div className="counselling__doctor-desc-data">
-              <h2>Dr. Uma Jain{props.doctorname}</h2>
-              <p><span><img src={degree} style={{height:"40px", width : "40px"}} /></span>MBBS{props.doctordesc}</p>
+              <h2>Dr. {props.doctorname}</h2>
+              <p><span><img src={degree} style={{height:"40px", width : "40px"}} /></span>{props.doctordesc}</p>
             </div>
           </div>
           <img src={props.imgurl} className="counselling__option-img" />

@@ -3,7 +3,6 @@ import React from "react";
 import { counsellingoption } from "../../Data.js";
 // component
 import { Counsellingoption } from "./Counsellingoption.jsx";
-import Carousel from "react-bootstrap/Carousel";
 
 // stylesheet
 import "../../css/counselling.css";
@@ -75,6 +74,8 @@ export const Counsellingsection = () => {
                   index={index}
                   desc={element.desc}
                   imgurl={element.imgurl}
+                  doctorname={element.doctorname}
+                  doctordesc={element.doctordesc}
                 />
               );
             })}

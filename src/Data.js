@@ -42,42 +42,58 @@ export const counsellingoption = [
     {
         heading : "Therapy for Anxiety",
         desc : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t",
-        imgurl : doc1
+        imgurl : doc1,
+        doctorname : "Uma Maheswari",
+        doctordesc : "MBBS"
     },
     {
         heading : "Therapy for ADHD",
         desc : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t",
-        imgurl : doc2
+        imgurl : doc2,
+        doctorname : "Ayush Jain",
+        doctordesc : "Md."
     },
     {
         heading : "Therapy for Stress",
         desc : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t",
-        imgurl : doc3
+        imgurl : doc3,
+        doctorname : "Suresh Mathur",
+        doctordesc : "Phd."
     },
     {
         heading : "Therapy for Bullying",
         desc : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t",
-        imgurl : doc4
+        imgurl : doc4,
+        doctorname : "Meena Agarwal",
+        doctordesc : "MBBS"
     },
     {
         heading : "Therapy for Breakup",
         desc : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t",
-        imgurl : doc4
+        imgurl : doc4,
+        doctorname : "Meena Agarwal",
+        doctordesc : "MBBS"
     },
     {
         heading : "Therapy for Depression",
         desc : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t",
-        imgurl : doc3
+        imgurl : doc3,
+        doctorname : "Suresh Mathur",
+        doctordesc : "Phd."
     },
     {
         heading : "Therapy for OCD",
         desc : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t",
-        imgurl : doc2
+        imgurl : doc2,
+        doctorname : "Ayush Jain",
+        doctordesc : "Md."
     },
     {
         heading : "Sleeping Disorder",
         desc : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t",
-        imgurl : doc1
+        imgurl : doc1,
+        doctorname : "Uma Maheswari",
+        doctordesc : "MBBS"
     }
 ]
 
