@@ -1,0 +1,142 @@
+.test__section {
+  padding: 3rem 0;
+}
+
+.test__section-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.test__section-cont > h1 {
+  width: 100%;
+  display: flex;
+  padding-bottom: 3rem;
+  justify-content: center;
+  color: #AE633F;
+  font-size: 2.5rem;
+}
+
+.test__section-all-data {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+}
+.test__section-all-data h1 {
+  border-top: 2rem solid #d6b09e;
+  border-left: 2rem solid #d6b09e;
+  border-bottom: 2rem solid #d6b09e;
+  padding-left: 9%;
+  color: #6a2e11;
+  background-color: #d6b09e;
+  font-size: 12rem;
+}
+
+.test__section-img-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.452);
+}
+
+.test__section-data {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+}
+.test__section-data h2 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.test__section-data p {
+  font-size: 2rem;
+}
+.test__section-data ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  margin-right: 10%;
+  list-style: none;
+}
+.test__section-data ul li {
+  color: #d6b09e;
+  margin-top: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.test__section-data ul li:hover {
+  color: #AE633F;
+}
+@-webkit-keyframes floatbutton {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes floatbutton {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.test__section-data button {
+  background-color: #4693b9;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 3rem;
+  -webkit-animation-name: floatbutton;
+          animation-name: floatbutton;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.test__section-heading-cont {
+  height: 100%;
+}
+.test__section-heading-cont h1 {
+  height: 100%;
+}
+
+.test__section-side {
+  position: relative;
+}
+
+.test__section-img-cont {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.test__section-img-cont img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+}/*# sourceMappingURL=testsection.css.map */

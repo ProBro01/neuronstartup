@@ -1,0 +1,58 @@
+@import "./variables";
+
+.aboutus__section{
+    &{
+
+    }
+}
+
+.aboutus__cont{
+    &{
+
+    }
+
+    h1{
+        font-size: $heading-size;
+        color: $primary-color;
+    }
+}
+
+.aboutus__info-cont{
+    &{
+        overflow: hidden;
+        height: 60vh;
+    }
+}
+
+.aboutus__reel{
+    &{
+        display: grid;
+        grid-template-columns: 100% 100%;
+        transition-property: transform;
+        transition-duration: 2s;
+    }
+}
+
+.aboutus__desc{
+    &{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    p{
+        &{
+            width: 500px;
+        }
+    }
+
+}
+
+.aboutus__mainpoints{
+    &{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

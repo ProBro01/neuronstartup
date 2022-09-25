@@ -1,0 +1,32 @@
+.aboutus__cont h1 {
+  font-size: 2.5rem;
+  color: #AE633F;
+}
+
+.aboutus__info-cont {
+  overflow: hidden;
+  height: 60vh;
+}
+
+.aboutus__reel {
+  display: grid;
+  grid-template-columns: 100% 100%;
+  transition-property: transform;
+  transition-duration: 2s;
+}
+
+.aboutus__desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus__desc p {
+  width: 500px;
+}
+
+.aboutus__mainpoints {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=aboutus.css.map */

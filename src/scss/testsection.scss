@@ -1,0 +1,166 @@
+@import "./variables";
+
+.test__section {
+  & {
+    padding: 3rem 0;
+  }
+}
+
+.test__section-cont {
+  & {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  & > h1 {
+    width: 100%;
+    display: flex;
+    padding-bottom: 3rem;
+    justify-content: center;
+    color: $primary-color;
+    font-size: $heading-size;
+  }
+}
+
+.test__section-all-data {
+  & {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+  }
+
+  h1 {
+    border-top: 2rem solid $primary-light-color;
+    border-left: 2rem solid $primary-light-color;
+    border-bottom: 2rem solid $primary-light-color;
+    padding-left: 9%;
+    color: $primary-darker-color;
+    background-color: $primary-light-color;
+    font-size: 12rem;
+  }
+}
+
+.test__section-img-overlay {
+  & {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+}
+
+.test__section-data {
+  & {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    color: $white-color;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: $largest-heading-size;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  ul {
+    & {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      margin-right: 10%;
+      list-style: none;
+    }
+
+    li {
+      & {
+        color: $primary-light-color;
+        margin-top: 2rem;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  @keyframes floatbutton {
+    0%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+    
+  }
+
+  button{
+    &{
+        background-color: $secondary-color;
+        border: none;
+        color: $white-color;
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 3rem;
+        animation-name: floatbutton;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: both;
+    }
+  }
+
+}
+
+.test__section-heading-cont {
+  & {
+    height: 100%;
+  }
+
+  h1 {
+    height: 100%;
+  }
+}
+
+.test__section-side {
+  & {
+    position: relative;
+  }
+}
+
+.test__section-img-cont {
+  & {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}

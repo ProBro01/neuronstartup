@@ -1,0 +1,98 @@
+@import "./variables.scss";
+
+.header__section {
+  padding: 0rem 1rem;
+}
+.header__navbar-container {
+  display: flex;
+//   align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 75px;
+  height: 75px;
+}
+
+.navbar {
+  & {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &>li {
+    & {
+      margin-right: 2rem;
+      cursor: pointer;
+      transition-property: color;
+      transition-duration: 500ms;
+    }
+
+    &:hover{
+        color: $primary-color;
+    }
+
+  }
+
+  ul {
+    & {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    li {
+      cursor: pointer;
+    }
+  }
+
+  button{
+    font-weight: bold;
+    border: none;
+    color: $white-color;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+    background-color: $primary-color;
+  }
+
+}
+
+.navbar__more-opts {
+  & {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  p {
+    cursor: pointer;
+    margin-right: 3rem;
+  }
+
+  ul {
+    & {
+      display: none;
+      z-index: 1;
+      background-color: white;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      border: 2px solid $primary-color;
+    }
+
+
+    li {
+      &{
+        padding: 1rem 1rem;
+      }
+
+      &:hover{
+        background-color: $primary-color;
+        color: white;
+      }
+
+    }
+  }
+}
