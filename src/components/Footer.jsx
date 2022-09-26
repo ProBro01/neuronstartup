@@ -1,13 +1,24 @@
 import React from "react";
+import { useState } from "react";
 // stylesheet
 import "../css/footer.css";
 // images
 import logo from "..//assests/images/logo.webp";
 // icons
-import { GoLocation } from "react-icons/go"
-import { AiOutlineMail, AiOutlineContacts } from "react-icons/ai"
+import { ImCross } from "react-icons/im"
+import { GoLocation } from "react-icons/go";
+import { BsFillChatLeftQuoteFill } from "react-icons/bs";
+import { AiOutlineMail, AiOutlineContacts } from "react-icons/ai";
 
 export const Footer = () => {
+  const [showbot, setshowbot] = useState(false);
+
+  function showbothandler(event) {
+    setshowbot((prevstate) => {
+      return !prevstate
+    });
+  }
+
   return (
     <footer className="footer">
       <div className="footer__subscription_form">
@@ -55,19 +66,22 @@ export const Footer = () => {
           <div className="footer__address-data">
             <h3>ADDRESS</h3>
             <p>
-              <span><GoLocation /></span><span>
-                Sitapura Industrial Area, Jaipur, Rajasthan
-                </span>
+              <span>
+                <GoLocation />
+              </span>
+              <span>Sitapura Industrial Area, Jaipur, Rajasthan</span>
             </p>
             <p>
-              <span><AiOutlineMail/></span><span>
-                aayusah007@gmail.com
-                </span>
+              <span>
+                <AiOutlineMail />
+              </span>
+              <span>aayusah007@gmail.com</span>
             </p>
             <p>
-              <span><AiOutlineContacts/></span><span>
-                8825312144
-                </span>
+              <span>
+                <AiOutlineContacts />
+              </span>
+              <span>8825312144</span>
             </p>
           </div>
           <div className="footer__address-img-cont">
@@ -78,6 +92,24 @@ export const Footer = () => {
       </div>
       <div className="footer__copyright">
         <p>&#169;2022 by Neurons - by Aryan Yadav</p>
+      </div>
+      <div className="chatbot-cont">
+        {showbot ? (
+          <div className="chatbot-frame-cont">
+            <div onClick={showbothandler}>
+              <ImCross />
+              </div>
+          <iframe
+            allow="microphone;"
+            className="chatbot"
+            src="https://console.dialogflow.com/api-client/demo/embedded/23de0fb2-3801-414f-89d5-f7bf35568d9f"
+          ></iframe>
+          </div>
+        ) : (
+          <div className="chatbot-show" onClick={showbothandler}>
+            <BsFillChatLeftQuoteFill />
+          </div>
+        )}
       </div>
     </footer>
   );
