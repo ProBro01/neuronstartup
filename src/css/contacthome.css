@@ -16,6 +16,12 @@
   font-size: 15rem;
   color: #d6b09e;
 }
+.contact__heading-cont img {
+  position: absolute;
+  top: -85%;
+  left: -19%;
+  z-index: -2;
+}
 
 .contact__form-cont {
   width: 100%;

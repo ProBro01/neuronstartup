@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   color: white;
-  background-color: rgb(27, 27, 27);
+  background-color: #2e7ba1;
 }
 
 .footer__subscription_form {
@@ -21,7 +21,7 @@
   position: relative;
 }
 .footer__subscription_form div p {
-  color: rgba(86, 88, 114, 0.8196078431);
+  color: #196991;
   font-size: 6rem;
   position: absolute;
   bottom: -30%;
@@ -38,6 +38,7 @@
   z-index: 0;
 }
 .footer__subscription_form button {
+  cursor: pointer;
   z-index: 0;
   background-color: #AE633F;
   border: none;
@@ -47,9 +48,96 @@
   color: white;
   font-size: 1rem;
 }
+.footer__subscription_form button:hover {
+  background-color: #6a2e11;
+}
+.footer__subscription_form button:active {
+  background-color: #AE633F;
+}
 
 .footer__map {
   width: 100%;
   margin: 2rem 0;
   height: 50vh;
+}
+
+.footer__data {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.footer__links {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer__links ul {
+  list-style: none;
+}
+.footer__links ul P {
+  cursor: pointer;
+  color: #d6b09e;
+  font-weight: bolder;
+  letter-spacing: 0.25rem;
+}
+.footer__links ul P:hover {
+  color: #6a2e11;
+}
+.footer__links ul li {
+  color: rgb(226, 226, 226);
+  cursor: pointer;
+  margin: 1rem 0;
+}
+.footer__links ul li:hover {
+  color: white;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__address-data h3 {
+  cursor: pointer;
+  color: #d6b09e;
+  font-weight: bolder;
+  letter-spacing: 0.25rem;
+}
+.footer__address-data h3:hover {
+  color: #6a2e11;
+}
+.footer__address-data p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+.footer__address-data p span {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.footer__address-img-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer__address-img-cont p {
+  cursor: pointer;
+  margin: 1rem 0;
+  font-family: "Oleo Script", cursive;
+  font-size: 2.5rem;
+  color: #d6b09e;
+}
+.footer__address-img-cont p:hover {
+  color: #6a2e11;
 }/*# sourceMappingURL=footer.css.map */

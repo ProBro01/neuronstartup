@@ -1,12 +1,15 @@
 import React from "react";
 // stylesheet
 import "../../css/contacthome.css";
+// images
+import contactimg from "../../assests/images/contactus.png"
 
 export const Contacthome = () => {
   return (
     <section className="contact__section">
       <div className="contact__cont">
         <div className="contact__heading-cont">
+          <img src={contactimg} />
           <h1>Contact Us</h1>
         </div>
         <div className="contact__form-cont">

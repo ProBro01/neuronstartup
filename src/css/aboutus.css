@@ -1,32 +1,78 @@
+.aboutus__cont {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 .aboutus__cont h1 {
   font-size: 2.5rem;
   color: #AE633F;
 }
 
 .aboutus__info-cont {
-  overflow: hidden;
-  height: 60vh;
+  color: white;
+  position: relative;
+  background: url("../assests/images/aboutus.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
 }
 
-.aboutus__reel {
-  display: grid;
-  grid-template-columns: 100% 100%;
-  transition-property: transform;
-  transition-duration: 2s;
+.aboutus__info-cont-overlay {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.747);
+}
+
+.aboutus__info-heading-cont {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem 0;
 }
 
 .aboutus__desc {
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .aboutus__desc p {
+  line-height: 2rem;
   width: 500px;
 }
 
 .aboutus__mainpoints {
+  z-index: 1;
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+}
+.aboutus__mainpoints ul {
+  list-style: none;
+}
+.aboutus__mainpoints ul li {
+  margin: 1rem 0;
+  display: flex;
+}
+.aboutus__mainpoints ul li span {
+  color: white;
+  margin-right: 0.5rem;
+  background-color: #AE633F;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
   align-items: center;
+}
+.aboutus__mainpoints h2 {
+  margin-top: 1rem;
+  color: #8bc1db;
+  letter-spacing: 0.25rem;
 }/*# sourceMappingURL=aboutus.css.map */

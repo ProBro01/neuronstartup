@@ -1,14 +1,19 @@
 import React from "react";
 // stylesheet
 import "../css/footer.css";
+// images
+import logo from "..//assests/images/logo.webp";
+// icons
+import { GoLocation } from "react-icons/go"
+import { AiOutlineMail, AiOutlineContacts } from "react-icons/ai"
 
 export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__subscription_form">
         <div>
-          <p>Subscribed</p>
-          <input type={"text"} placeholder={"Get Subscription"} />
+          <p>Subscribe</p>
+          <input type={"text"} placeholder={"Email address..."} />
           <button>Get Updates</button>
         </div>
       </div>
@@ -23,18 +28,57 @@ export const Footer = () => {
         ></iframe>
       </div>
       <div className="footer__data">
-        <p>
-          Sitapura Cir, Sitapura Industrial Area, Sitapura, Jaipur, Rajasthan
-          302022, India
-        </p>
-        <p>
-          <span>Email:</span>aayusah007@gmail.com
-        </p>
-        <p>
-          <span>Phone:</span>8825312144
-        </p>
+        <div className="footer__links">
+          <ul>
+            <p>MEDICATIONS</p>
+            <li>Therapy for ADHD</li>
+            <li>Therapy for Depression</li>
+            <li>Therapy for Anxiety</li>
+            <li>Therapy for stress</li>
+            <li>Therapy for OCD</li>
+            <li>Sleeping Disorders</li>
+            <li>Therapy for Bullying</li>
+            <li>Therapy for Breakups</li>
+          </ul>
+          <ul>
+            <p>LINKS</p>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Online Medication</li>
+          </ul>
+          <ul>
+            <p>FOUNDERS</p>
+            <li>MR. xyz</li>
+          </ul>
+        </div>
+        <div className="footer__address">
+          <div className="footer__address-data">
+            <h3>ADDRESS</h3>
+            <p>
+              <span><GoLocation /></span><span>
+                Sitapura Industrial Area, Jaipur, Rajasthan
+                </span>
+            </p>
+            <p>
+              <span><AiOutlineMail/></span><span>
+                aayusah007@gmail.com
+                </span>
+            </p>
+            <p>
+              <span><AiOutlineContacts/></span><span>
+                8825312144
+                </span>
+            </p>
+          </div>
+          <div className="footer__address-img-cont">
+            <img src={logo} />
+            <p>Neuron Foundation</p>
+          </div>
+        </div>
       </div>
-      <div className="footer__copyright">&#169;2022 by Neurons</div>
+      <div className="footer__copyright">
+        <p>&#169;2022 by Neurons - by Aryan Yadav</p>
+      </div>
     </footer>
   );
 };

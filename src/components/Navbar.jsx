@@ -15,12 +15,14 @@ export const Navbar = () => {
             return <li>{element}</li>;
           })}
           <div className="navbar__more-opts"  onMouseEnter={(event) => {
-                document.getElementById('more-options').style.display="flex"
-            }} onMouseLeave={(event) => {
-                document.getElementById('more-options').style.display="none"
+                document.getElementById('more-options').classList.add("showul")
+                document.getElementById('more-options').classList.remove("hideul")
+              }} onMouseLeave={(event) => {
+                document.getElementById('more-options').classList.remove("showul")
+                document.getElementById('more-options').classList.add("hideul")
             }}>
             <p>More</p>
-            <ul id="more-options">
+            <ul id="more-options" className="hideul">
               {navbarLinks[1].map((element, index) => {
                 return <li>{element}</li>;
               })}

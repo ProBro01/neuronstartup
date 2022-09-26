@@ -54,13 +54,15 @@
   margin-right: 3rem;
 }
 .navbar__more-opts ul {
-  display: none;
+  overflow: hidden;
+  display: flex;
   z-index: 1;
   background-color: white;
   position: absolute;
   top: 100%;
   right: 0;
-  border: 2px solid #AE633F;
+  transition-property: height;
+  transition-duration: 1s;
 }
 .navbar__more-opts ul li {
   padding: 1rem 1rem;
@@ -68,4 +70,14 @@
 .navbar__more-opts ul li:hover {
   background-color: #AE633F;
   color: white;
+}
+
+.showul {
+  border: 2px solid #AE633F;
+  height: auto;
+}
+
+.hideul {
+  height: 0;
+  border: none;
 }/*# sourceMappingURL=navbar.css.map */

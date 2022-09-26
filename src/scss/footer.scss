@@ -5,7 +5,7 @@
         display: flex;
         flex-direction: column;
         color: white;
-        background-color: rgb(27, 27, 27);
+        background-color: $secondary-darker-color;
     }
 }
 
@@ -28,7 +28,7 @@
     }
 
         p{
-            color: #565872d1;
+            color: #196991;
             font-size: 6rem;
             position: absolute;
             bottom: -30%;
@@ -51,6 +51,7 @@
 
     button{
         &{
+            cursor: pointer;
             z-index: 0;
             background-color: $primary-color;
             border: none;
@@ -60,6 +61,15 @@
             color: white;
             font-size: 1rem;
         }
+
+        &:hover{
+            background-color: $primary-darker-color;
+        }
+
+        &:active{
+            background-color: $primary-color;
+        }
+
     }
 
 }
@@ -74,6 +84,121 @@
 
 .footer__data{
     &{
-        
+        margin: 3rem 0;
+        display: flex;
+        justify-content: space-evenly;
     }
+}
+
+.footer__copyright{
+    &{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+}
+
+.footer__links{
+    &{
+        width: 50%;
+        display: flex;   
+        justify-content: space-evenly;
+    }
+
+    ul{
+        &{
+            list-style: none;
+        }
+
+        P{
+            &{
+                cursor: pointer;
+                color: $primary-light-color;
+                font-weight: bolder;
+                letter-spacing: 0.25rem;
+            }
+
+            &:hover{
+                color: $primary-darker-color;
+            }
+
+        }
+
+        li{
+            &{
+                color: rgb(226, 226, 226);
+                cursor: pointer;
+                margin: 1rem 0;
+            }
+
+            &:hover{
+                color: white;
+            }
+
+        }
+    }    
+
+}
+
+.footer__address{
+    &{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.footer__address-data{
+    &{
+
+    }
+
+    h3{
+        &{
+            cursor: pointer;
+            color: $primary-light-color;
+            font-weight: bolder;
+            letter-spacing: 0.25rem;
+        }
+
+        &:hover{
+            color: $primary-darker-color;
+        }
+    }
+
+    p{
+      &{
+          margin: 0.5rem 0;
+          display: flex;
+          align-items: center;
+      }
+      span{
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+        font-size: 1rem;
+      }
+    }
+
+}
+
+.footer__address-img-cont{
+    &{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    p{
+        cursor: pointer;
+        margin: 1rem 0;
+        font-family: 'Oleo Script', cursive;
+        font-size: 2.5rem;
+        color: $primary-light-color;
+    }
+
+    p:hover{
+        color: $primary-darker-color;
+    }
+
 }
